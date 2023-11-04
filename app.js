@@ -31,6 +31,8 @@ function search() {
             let ele = imgAll[i].getAttribute("data-keyword");
             if (value === ele) {
                 imgAll[i].style.display = "block";
+            } else if(value == 'all' || value == "All"){
+                imgAll[i].style.display  = 'block';
             } else {
                 imgAll[i].style.display = "none";
             }
